@@ -1,0 +1,91 @@
+div.img
+{
+  margin: 0 10px 10px 0;  /* top bottom right left */
+  float: left;
+  height:auto;
+  width: 72;  
+  text-align: center;
+  /* background: yellow; */
+  
+  /* create round corner for image */
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -khtml-border-radius: 20px;
+  border-radius: 20px;
+}	
+
+div.img img
+{
+ /* margin: 3px;  */
+  height: 64;
+  width: 64;  
+  /* border: 1px solid green; */
+}
+
+div.img a:hover img
+{
+  border:1px solid blue;  
+  /* create round corner for image */
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -khtml-border-radius: 20px;
+  border-radius: 20px;
+}
+  
+div.desc
+{
+  text-align: center;
+  font-weight: normal; 
+  font-family:"Times New Roman",Times,serif;
+  font-size:12px;
+  color:blue;
+  margin: 0px; 
+  /* border: 1px solid; */
+  
+  /* create round border for text */
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+   
+}
+
+div.navimg
+{
+  margin: 0 10px 0px 0;  /* top bottom right left */
+  float: left;
+  height:32;
+  width: 72;  
+  text-align: center;
+}	
+
+div.navimg img
+{
+   /* margin: 3px;  */
+  height: 32;
+  width: 64;  
+}
+
+.clearboth { clear: both; } /* force new line */
+
+p
+{
+  margin: 10 10px 10px 0;  /* top bottom right left */
+  color:white;
+  //background-color:yellow;
+}
+
+p.padding
+{
+  //border-style: ridge;
+  color:red;
+  border: 1px solid;
+  padding-top:0px;
+  padding-bottom:0px;
+  padding-right:0px;
+  padding-left:0px;
+  width:234px;
+  text-align: center;
+}
+
+
+

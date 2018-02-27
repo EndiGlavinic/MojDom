@@ -1,0 +1,29 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+</head>
+<body>
+	<script type="text/javascript" src="js/jquery.wheelcolorpicker.js"></script>
+	<link type="text/css" rel="stylesheet" href="css/wheelcolorpicker.css" />
+	<input id="color" type="text" data-wheelcolorpicker data-wcp-sliders="wv"  data-wcp-layout="block"  data-wcp-autoResize="false" data-wcp-cssClass="color-block"/>
+	<style type="text/css">
+		.color-block {
+				width: 350px;
+				height: 250px;
+		}
+	</style>
+	<script type="text/javascript">
+		$(function() {
+			$( ".color-block" ).on('sliderup', function() {
+				boja = $('#color').wheelColorPicker('getValue');
+				$( "body" ).css('background-color','#'+boja);
+			});
+			$( ".color-block" ).on('slidermove', function() {
+				boja = $('#color').wheelColorPicker('getValue');
+				$( "body" ).css('background-color','#'+boja);
+			});
+		});
+	</script>
+</body>
+</html>
